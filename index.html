@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Fondamento&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <title>To Do List</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="background">
+      <header class="header">
+        <div class="container">
+          <div>
+            <h1 class="header__title">The to do list</h1>
+          </div>
+          <div>
+            <input type="text" class="search-form" id="search" placeholder="Search in the list..." />
+            <button class="different-look-btn">Change the look</button>
+          </div>
+        </div> <!-- /container -->
+      </header> <!-- /header -->
+      <section class="section">
+        <div class="container">
+          <form id="addForm">
+            <input type="text" class="add-duty" id="newItemText" placeholder="Add what you need to do" />
+            <input type="submit" class="btn" value="add to the list" />
+          </form> <!-- /addForm -->
+          <h3 class="list__title">What are you planning to do?</h3>
+          <ul class="list__group" id="items">
+            <li class="list__item">
+              <div class="input__item">
+                <input type="checkbox">
+                <p>Cook breakfast</p>
+              </div>
+              <button type="button" data-action="delete" class="list__btn">
+                Delete
+              </button>
+            </li> <!-- /list__item -->
+            <li class="list__item">
+              <div class="input__item">
+                <input type="checkbox">
+                <p>Do laundry</p>
+              </div>
+              <button type="button" data-action="delete" class="list__btn">
+                Delete
+              </button>
+            </li> <!-- /list__item -->
+            <li class="list__item">
+              <div class="input__item">
+                <input type="checkbox">
+                <p>Go for a walk</p>
+              </div>
+              <button type="button" data-action="delete" class="list__btn">
+                Delete
+              </button>
+            </li> <!-- /list__item -->
+            <li class="list__item">
+              <div class="input__item">
+                <input type="checkbox">
+                <p>Meet friends</p>
+              </div>
+              <button type="button" data-action="delete" class="list__btn">
+                Delete
+              </button>
+            </li> <!-- /list__item -->
+            <li class="list__item">
+              <div class="input__item">
+                <input type="checkbox">
+                <p>Learn JavaScript</p>
+              </div>
+              <button type="button" data-action="delete" class="list__btn">
+                Delete
+              </button>
+            </li> <!-- /list__item -->
+          </ul> <!-- /list__group -->
+        </div> <!-- /container -->
+      </section> <!-- /section -->
+    </div> <!-- /background -->
+  </div> <!-- /wrapper -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>

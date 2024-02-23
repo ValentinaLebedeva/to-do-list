@@ -1,0 +1,147 @@
+* {
+  margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --lights: #c0d6ff;
+  --blur: #c0ffcc;
+  --bird: #ffc0cb;
+  --rain: #dbfba8;
+  --border: #3e3030;
+
+  --title-lights: #3e0c0c;
+  --title-blur: #ddd;
+  --title-bird: #000;
+  --title-rain: #000;
+
+  --font-blur: "Baloo Da 2", cursive;
+  --font-bird: "Fondamento", cursive;
+  --font-lights: "Fredoka", sans-serif;
+  --font-rain: "PT Sans", sans-serif;
+}
+
+.wrapper {
+  font-family: var(--font-bird);
+}
+
+
+.background {
+  width: 100%;
+  background: url("bird.jpg") center no-repeat;
+  background-color: #b0d3e2;
+  background-size: cover;
+}
+
+.container {
+  width: 960px;
+  padding: 25px;
+}
+
+.different-look-btn {
+  float: right;
+  padding: 5px 10px;
+  background-color: var(--bird);
+  font-family: var(--font-bird);
+}
+
+.header__title {
+  line-height: 93px;
+  height: 93px;
+  font-size: 55px;
+}
+
+.search-form {
+  width: 55%;
+  padding: 10px;
+  font-style: italic;
+}
+
+.add-duty {
+  width: 65%;
+  padding: 10px;
+  font-style: italic;
+}
+
+.btn {
+  width: 20%;
+  padding: 7px;
+  float: right;
+  background-color: var(--bird);
+  font-family: var(--font-bird);
+
+}
+
+.btn[value] {
+  font-size: 17px;
+  color: var(--border);
+}
+
+.list__title {
+  font-size: 35px;
+  margin: 30px 0;
+}
+
+.list__group {
+  display: flex;
+  flex-direction: column;
+  background-color: #dddde8;
+  border: 1px solid var(--border);
+  ;
+  width: 100%;
+  min-height: 500px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+  padding: 20px;
+  font-size: 22px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.list__btn {
+  float: right;
+  margin-right: 15px;
+  font-size: 20px;
+  background-color: #a8e1fb;
+  padding: 5px 55px;
+  border-radius: 10px;
+  color: var(--border);
+  border: 1px solid var(--border);
+}
+
+
+.input__item {
+  margin: 0;
+}
+
+.input__item p {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+}
